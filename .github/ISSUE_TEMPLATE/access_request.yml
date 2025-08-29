@@ -1,20 +1,20 @@
 # .github/ISSUE_TEMPLATE/access-request.yml
-name: "Repository Access Request"
-description: "Use this form to request access to a repository."
-title: "[Access Request] for "
-labels: ["access-request", "needs-review"]
+name: "Repository Update-Access Request"
+description: "Use this form to request updated repository access to a repository."
+title: "[Access/Update Request] for "
+labels: ["access-request", "needs-review", "update-request"]
 body:
   - type: markdown
     attributes:
       value: |
         Please fill out the following details to request repository access. 
-        Ensure your GitHub username is correct.
+        Ensure your GitHub username is correct. (Must be a Cisco CEC ID)
 
   - type: input
     id: github_username
     attributes:
-      label: "GitHub Username"
-      description: "What is your GitHub username? (e.g., @octocat)"
+      label: "GitHub/Cisco CEC ID"
+      description: "What is your GitHub username? (e.g., email@cisco.com)"
       placeholder: "@username"
     validations:
       required: true
@@ -28,6 +28,7 @@ body:
         - "Read (View code, open issues/PRs)"
         - "Triage (Manage issues and PRs)"
         - "Write (Push to branches)"
+        - "Admin (Ownership/Administrator)
     validations:
       required: true
 
