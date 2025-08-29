@@ -1,0 +1,40 @@
+# .github/ISSUE_TEMPLATE/access-request.yml
+name: "Repository Access Request"
+description: "Use this form to request access to a repository."
+title: "[Access Request] for "
+labels: ["access-request", "needs-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please fill out the following details to request repository access. 
+        Ensure your GitHub username is correct.
+
+  - type: input
+    id: github_username
+    attributes:
+      label: "GitHub Username"
+      description: "What is your GitHub username? (e.g., @octocat)"
+      placeholder: "@username"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: access_level
+    attributes:
+      label: "Requested Access Level"
+      description: "What level of permission do you need?"
+      options:
+        - "Read (View code, open issues/PRs)"
+        - "Triage (Manage issues and PRs)"
+        - "Write (Push to branches)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: reason
+    attributes:
+      label: "Reason for Access"
+      description: "Please briefly explain why you need access to this repository and what you'll be working on."
+    validations:
+      required: true
