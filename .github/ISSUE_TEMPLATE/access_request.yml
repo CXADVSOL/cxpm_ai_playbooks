@@ -28,7 +28,7 @@ body:
         - "Read (View code, open issues/PRs)"
         - "Triage (Manage issues and PRs)"
         - "Write (Push to branches)"
-        - "Admin (Ownership/Administrator)
+        - "Admin (Ownership/Administrator)"
     validations:
       required: true
 
